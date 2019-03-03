@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Carousel from "react-bootstrap/Carousel";
+import "./Carous.css";
 
 export default class Carous extends Component {
   render() {
@@ -7,21 +8,21 @@ export default class Carous extends Component {
       <div>
         <Carousel>
           <Carousel.Item>
-            <img
-              className="d-block w-100"
-              src="holder.js/800x400?text=First slide&bg=373940"
-              alt="First slide"
+            <div
+              className="slidingImg"
+              // src="https://images.pexels.com/photos/788946/pexels-photo-788946.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
+              // alt="First slide"
             />
             <Carousel.Caption>
-              <h3>First slide label</h3>
-              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+              <h3>Iphone X XS XR</h3>
+              <p>Save on all of your favorite phones</p>
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
-            <img
-              className="d-block w-100"
-              src="holder.js/800x400?text=Second slide&bg=282c34"
-              alt="Third slide"
+            <div
+              className="slidingImg2"
+              // src="holder.js/800x400?text=Second slide&bg=282c34"
+              // alt="Second slide"
             />
 
             <Carousel.Caption>
@@ -29,11 +30,11 @@ export default class Carous extends Component {
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </Carousel.Caption>
           </Carousel.Item>
-          <Carousel.Item>
-            <img
+          {/* <Carousel.Item>
+            <div
               className="d-block w-100"
-              src="holder.js/800x400?text=Third slide&bg=20232a"
-              alt="Third slide"
+              // src="holder.js/800x400?text=Third slide&bg=20232a"
+              // alt="Third slide"
             />
 
             <Carousel.Caption>
@@ -42,7 +43,7 @@ export default class Carous extends Component {
                 Praesent commodo cursus magna, vel scelerisque nisl consectetur.
               </p>
             </Carousel.Caption>
-          </Carousel.Item>
+          </Carousel.Item> */}
         </Carousel>
       </div>
     );

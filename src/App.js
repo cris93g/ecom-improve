@@ -3,6 +3,8 @@ import logo from "./logo.svg";
 import "./App.css";
 import Nav from "./components/nav/Nav";
 import Carous from "./components/carousel/Carous";
+import LandingBody from "./components/landingBody/LandingBody";
+import Footer from "./components/footer/Footer";
 class App extends Component {
   render() {
     return (
@@ -10,6 +12,8 @@ class App extends Component {
         <Nav />
 
         <Carous />
+        <LandingBody />
+        <Footer />
       </div>
     );
   }

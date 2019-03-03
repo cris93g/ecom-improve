@@ -56,6 +56,7 @@ export default class Nav extends Component {
             <div />
           </RightBottom>
         </BottomBorder>
+        <Line />
       </div>
     );
   }

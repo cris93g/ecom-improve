@@ -1,0 +1,20 @@
+.slidingImg {
+  background: url("https://images.pexels.com/photos/236086/pexels-photo-236086.jpeg")
+    center center no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  padding-bottom: 60vh;
+}
+.slidingImg2 {
+  background: url("https://images.unsplash.com/photo-1542889601-399c4f3a8402?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80")
+    center center no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  padding-bottom: 60vh;
+}
