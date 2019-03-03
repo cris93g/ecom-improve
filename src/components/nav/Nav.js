@@ -1,13 +1,18 @@
 import React, { Component } from "react";
 import styled from "styled-components";
-
+import SearchBar from "../searchBar/SearchBar";
+import "./nav.css";
 const Wrapper = styled.section`
-  width: 100vw;
-  margin: auto;
-  display: flex;
+  width: 100%;
   height: 15vh;
-  align-items: center;
   background-color: red;
+`;
+
+const TopNav = styled.section`
+  height: 50%;
+`;
+const BotNav = styled.section`
+  height: 50%;
 `;
 const Line = styled.section`
   width: 100%;
@@ -18,7 +23,6 @@ const Line = styled.section`
 `;
 const BottomBorder = styled.section`
   width: 100%;
-
   display: flex;
   background-color: red;
   height: 8vh;
@@ -26,34 +30,36 @@ const BottomBorder = styled.section`
 const LeftBottom = styled.section`
   width: 50%;
   display: flex;
-  height: 100%;
-  flex-direction: row;
-  align-items: stretch;
-  align-content: stretch;
+
+  color: white;
 `;
 const RightBottom = styled.section`
   width: 50%;
   display: flex;
-  height: 100%;
+  color: white;
 `;
 export default class Nav extends Component {
   render() {
     return (
       <div>
-        <Wrapper />
+        <Wrapper>
+          <TopNav />
+          <BotNav>
+            <SearchBar />
+          </BotNav>
+        </Wrapper>
         <Line />
         <BottomBorder>
           <LeftBottom>
-            {/* <div>
-              <div>Products</div>
-              <div>Brands</div>
-              <div>Deals</div>
-              <div>Services</div>
-            </div> */}
+            <h4 className="bannerHeadings">Products</h4>
+            <h4 className="bannerHeadings">Brands</h4>
+            <h4 className="bannerHeadings">Deals</h4>
+            <h4 className="bannerHeadings">Services</h4>
           </LeftBottom>
           <RightBottom>
             {" "}
-            <div />
+            <h4 className="bannerHeadings2">Account</h4>
+            <h4 className="bannerHeadings2">Shopping History</h4>
           </RightBottom>
         </BottomBorder>
         <Line />

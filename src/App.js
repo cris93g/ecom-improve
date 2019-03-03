@@ -5,7 +5,7 @@ import Nav from "./components/nav/Nav";
 import Carous from "./components/carousel/Carous";
 import LandingBody from "./components/landingBody/LandingBody";
 import Footer from "./components/footer/Footer";
-import AutoCompleteText from "./components/searchBar/AutoCompleteText";
+import AutoCompleteText from "./components/searchBar/SearchBar";
 class App extends Component {
   render() {
     return (
@@ -14,7 +14,6 @@ class App extends Component {
 
         <Carous />
         <LandingBody />
-        <AutoCompleteText />
         <Footer />
       </div>
     );
