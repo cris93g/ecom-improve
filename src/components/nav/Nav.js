@@ -5,7 +5,7 @@ import "./nav.css";
 const Wrapper = styled.section`
   width: 100%;
   height: 15vh;
-  background-color: red;
+  /* background-color: red; */
 `;
 
 const TopNav = styled.section`
@@ -18,25 +18,25 @@ const Line = styled.section`
   width: 100%;
 
   display: flex;
-  background-color: lightgray;
+  background-color: red;
   height: 1px;
 `;
 const BottomBorder = styled.section`
   width: 100%;
   display: flex;
-  background-color: red;
+  /* background-color: red; */
   height: 8vh;
 `;
 const LeftBottom = styled.section`
   width: 50%;
   display: flex;
 
-  color: white;
+  color: red;
 `;
 const RightBottom = styled.section`
   width: 50%;
   display: flex;
-  color: white;
+  color: red;
 `;
 export default class Nav extends Component {
   render() {
