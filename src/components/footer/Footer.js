@@ -4,7 +4,7 @@ const BottomBorder = styled.section`
   width: 100%;
   margin-top: 10vh;
   display: flex;
-  background-color: red;
+  background-color: blue;
   height: 8vh;
 `;
 const FootWrapper = styled.section`

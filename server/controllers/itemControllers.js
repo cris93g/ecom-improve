@@ -1,7 +1,8 @@
 module.exports = {
-  getTvs(req, res) {
+  getProducts(req, res) {
     const db = req.app.get("db");
-    db.getTv()
+    db.fry_items
+      .find()
       .then(products => res.status(200).json(products))
       .catch(console.log);
   }

@@ -13,9 +13,8 @@ export default class Carous extends Component {
               // src="https://images.pexels.com/photos/788946/pexels-photo-788946.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
               // alt="First slide"
             />
-            <Carousel.Caption>
-              <h3>Iphone X XS XR</h3>
-              <p>Save on all of your favorite phones</p>
+            <Carousel.Caption className="firstCapt">
+              <h2>Big-screen 4K TVs as low as $249.99.</h2>
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>

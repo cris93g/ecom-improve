@@ -11,14 +11,9 @@ routes(app);
 app.use(cors());
 app.use(json());
 
-massive(process.env.CONNECTION_STRING)
-  .then(dbInstance => {
-    app.set("db", dbInstance);
-    console.log("connected");
-  })
-  .catch(err => {
-    console.log(err);
-  });
+massive(process.env.CONNECTION_STRING).then(db => {
+  app.set("db", db);
+});
 
 app.listen(port, () => {
   console.log(`listening on port ${port}`);

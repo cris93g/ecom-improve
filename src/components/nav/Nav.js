@@ -10,33 +10,35 @@ const Wrapper = styled.section`
 
 const TopNav = styled.section`
   height: 50%;
+  background-color: blue;
 `;
 const BotNav = styled.section`
   height: 50%;
+  background-color: blue;
 `;
 const Line = styled.section`
   width: 100%;
 
   display: flex;
-  background-color: red;
+  background-color: lightgray;
   height: 1px;
 `;
 const BottomBorder = styled.section`
   width: 100%;
   display: flex;
-  /* background-color: red; */
+  background-color: blue;
   height: 8vh;
 `;
 const LeftBottom = styled.section`
   width: 50%;
   display: flex;
 
-  color: red;
+  color: white;
 `;
 const RightBottom = styled.section`
   width: 50%;
   display: flex;
-  color: red;
+  color: white;
 `;
 export default class Nav extends Component {
   render() {
@@ -44,9 +46,7 @@ export default class Nav extends Component {
       <div>
         <Wrapper>
           <TopNav />
-          <BotNav>
-            <SearchBar />
-          </BotNav>
+          <BotNav>{/* <SearchBar /> */}</BotNav>
         </Wrapper>
         <Line />
         <BottomBorder>
