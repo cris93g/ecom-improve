@@ -6,18 +6,22 @@ import Carous from "./components/carousel/Carous";
 import LandingBody from "./components/landingBody/LandingBody";
 import Footer from "./components/footer/Footer";
 import AutoCompleteText from "./components/searchBar/SearchBar";
+import { Provider } from "react-redux";
+import store from "./redux/store";
 class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <Nav />
+	render() {
+		return (
+			<Provider store={store}>
+				<div className="App">
+					<Nav />
 
-        <Carous />
-        <LandingBody />
-        <Footer />
-      </div>
-    );
-  }
+					<Carous />
+					<LandingBody />
+					<Footer />
+				</div>
+			</Provider>
+		);
+	}
 }
 
 export default App;
