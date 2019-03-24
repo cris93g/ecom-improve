@@ -25,6 +25,12 @@ module.exports = {
 			})
 			.catch(console.log);
 	},
+	getTvs(req, res, next) {
+		const db = req.app.get("db");
+		db.getTvs()
+			.then(products => res.status(200).json(products))
+			.catch(console.log);
+	},
 	check(req, res) {
 		console.log(req.body);
 		res.send({ status: "SUCCESS" });

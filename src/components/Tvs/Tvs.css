@@ -1,0 +1,22 @@
+.tvdiv {
+	display: flex;
+	width: 40vw;
+	height: 40vh;
+}
+.cards {
+	width: 250px;
+	height: 250px;
+	/* align-items: center; */
+	/* margin: auto; */
+}
+.cardPictures {
+	display: flex;
+	width: 40vw;
+	height: 30vh;
+	margin: auto;
+	max-width: 100%;
+}
+.cardWords {
+	margin: auto;
+	align-items: center;
+}
